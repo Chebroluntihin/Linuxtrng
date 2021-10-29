@@ -50,3 +50,15 @@
 • ls -lt | head -2
 • ls -lSr | head -2
 • wc filename -l
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+                                      Try pgno:92
+
+1. O (insert at the beginning)
+2. dd (removes the second line) and u (undo)
+3. :/bc 
+4. dw (deletes the word)
+5. :1,2s/c/C/g
+6. :1,$s/  /\t/g
