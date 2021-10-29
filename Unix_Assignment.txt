@@ -50,15 +50,29 @@
 • ls -lt | head -2
 • ls -lSr | head -2
 • wc filename -l
+ . find . -mtime -3
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
                                       Try pgno:92
 
-1. O (insert at the beginning)
+1.  Press O (To add new line)
 2. dd (removes the second line) and u (undo)
 3. :/bc 
-4. dw (deletes the word)
+4. search word number by :/number and then press dw to delete word
 5. :1,2s/c/C/g
 6. :1,$s/  /\t/g
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                      Try pgno: 61
+. grep "A" filename
+. grep "^The" filename
+. grep "\.$" filename
+. grep ".a\/b\/c" filename
+. grep "def\/deef\/deeef" filename
+. grep -v "^[0-9]" filename
+. grep -v “.” file3
+. find . -type d  -print
