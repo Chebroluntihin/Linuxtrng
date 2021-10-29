@@ -46,7 +46,7 @@
                                    Try pgno: 55
 
 • head  -25 filename | tail +10
-• head  -10 filename | tail -1
+• head  -10 filename | tail +10
 • ls -lt | head -2
 • ls -lSr | head -2
 • wc filename -l
