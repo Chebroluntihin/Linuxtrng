@@ -1,0 +1,52 @@
+                           Assignment: Try pgno:41
+
+1. mkdir Test
+2. cat >employeelist
+   cat >skillset
+3. mkdir Test2
+     ln -s skillset new_skillset(symbol link)         ln skillset hard_skillset(hard link)
+    rm skillset 
+        cat new_skillset        #file exists but points to void location i.e it shows error
+        cat hard_skillset       #hard link file exists and it displays the contents in skillset
+   Symbolic link is a reference to the file which acts as a pointer. It does not access the data  
+     available in original file.
+     Hard link is a copy of original file. It access the data available in original file.
+4. /home/user2
+    chmod g+rw filename 
+    ls -l
+5. chmod g-w filename
+   ls -l
+6. chmod 0+w filename
+   ls -l
+7. chmod o-w filename
+   ls -l
+8. chgrp user3 employeelist
+
+9. chown user5 employeelist 
+
+10. wc -l employeelist
+
+
+
+
+                                   Try pgno: 47     
+
+• cat >File1
+• cat >>File1
+• cat >File2
+• cat File1 File2 
+• cat File1 >File2
+• cat File1 File2  >File3
+• cat file1 file2 file3 file4 file5
+• cat file1 file2 file3 file4 file5  2>errorlog
+• cat file1 file2 file3 file4 file5 >file10 2>&1
+• cp file1 file6  2>&errorlog
+
+
+                                   Try pgno: 55
+
+• head  -25 filename | tail +10
+• head  -10 filename | tail -1
+• ls -lt | head -2
+• ls -lSr | head -2
+• wc filename -l
