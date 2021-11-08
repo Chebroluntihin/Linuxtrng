@@ -76,3 +76,17 @@
 . grep -v "^[0-9]" filename
 . grep -v “.” file3
 . find . -type d  -print
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                         Try pgno: 120
+
+crontab (to schedule job)
+1. * * * * * >f10 
+2. crontab -l	(to check the scheduled job)
+3. at now +1 minute (schedule job)
+4. sleep 100&	 (scheduled job)
+5. at -l  (to see scheduled job)
+6. at -r jobno(46)  (remove job)
+7. crontab -r	 (remove job
