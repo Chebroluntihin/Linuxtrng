@@ -1,0 +1,45 @@
+                                      Try pgno: 140
+
+1.) Accept two numbers from the user do all arithmetic operations on them and write the output
+   echo "enter the numbers"
+   read a
+   read b
+   val=`expr $a + $b`
+   echo "a + b : $val"
+  
+   val=`expr $a - $b`
+   echo "a - b : $val"
+  
+  val=`expr $a \* $b`
+  echo "a * b : $val"
+ 
+  val=`expr $b / $a`
+  echo "b / a : $val"
+
+  val=`expr $b % $a`
+  echo "b % a : $val"
+
+2.) Accept two strings and display them as banner​
+
+ echo "enter the two strings"
+ read str1
+ read str2
+ banner str1
+ banner str2
+
+3)Accept a username and send him a message if the user has logged in​
+
+   echo "Who are you?"
+   read user
+   echo $user
+   name=$(whoami)
+   if[$user == $name]
+   then
+     top -u $user
+   else
+     echo "not logged in"
+   fi
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                      
