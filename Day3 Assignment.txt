@@ -41,5 +41,68 @@
    fi
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                        
+                                          Try pgno: 166
 
-                                      
+1)Accept a set of arguments from the user and find the largest of them.​ 
+
+maxEle=$1
+
+  for arg in "$@"
+  do
+      if [ "$arg" -gt "$maxEle" ]
+      then
+           maxEle=$arg
+      fi
+  done
+ echo "Largest value among the arguments passed is: $maxEle"
+
+3)Accept a filename from the user and for every word in the file display the word and the no of characters in it.
+
+ echo " enter your filename:"
+ read filename
+  result=$(cat $filename | wc -wc)
+  echo "Your file has $result characters"   
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+                                              Try pgno: 158
+1.) Accept 3 numbers and display them in asc order (Use command line arguments)
+
+echo "Enter Num1"
+read num1
+echo "Enter Num2"
+read num2
+echo "Enter Num3"
+read num3
+if [ $num1 -gt $num2 ] && [ $num1 -gt $num3 ]
+then
+     echo the greatest num is $num1
+elif [ $num2 -gt $num1 ] && [ $num2 -gt $num3 ]
+then
+     echo the greatest num is  $num2
+else
+    echo the greatest num is  $num3
+fi 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                   Try pgno: 173
+
+1) Accept a character from the user and display if it is a number or alphabet and others in case of any other character. Do this till the user enters empty value​
+
+
+ echo "enter a char"
+ read c
+ if [[ $c == [A-Z] ]];
+ then
+     echo "you have entered an alphabet"
+ elif [[ $c == [a-z] ]];
+ then
+     echo "you have entered an alphabet"
+ elif [[ $c == [0-9] ]];
+ then
+     echo "you have entered is a digit"
+ else
+    echo "you have entered a special symbols!"
+ fi                                  
